@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Random Word Test</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h1>20 So'zli Tarjima Testi</h1>
+
+
+<div id="inputSection">
+<h2>So'zlar va tarjimalarni kiriting</h2>
+<div class="grid">
+<div>
+<h3>O'zbekcha so'zlar</h3>
+<textarea id="uzWords" placeholder="20 ta so'z, har bir qatorda bitta"></textarea>
+</div>
+
+
+<div>
+<h3>Inglizcha tarjimalar</h3>
+<textarea id="enWords" placeholder="20 ta tarjima, har bir qatorda bitta"></textarea>
+</div>
+</div>
+<button id="startBtn">Testni boshlash</button>
+<p id="error" class="error"></p>
+</div>
+
+
+<div id="testSection" class="hidden">
+<h2>Tarjima qiling</h2>
+<div class="card">
+<p id="currentWord" class="word"></p>
+</div>
+
+
+<input type="text" id="answer" placeholder="Tarjima yozing..." />
+<button id="checkBtn">Tekshirish</button>
+
+
+<p id="result"></p>
+<button id="nextBtn" class="hidden">Keyingi so'z</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
